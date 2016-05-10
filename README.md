@@ -50,7 +50,8 @@ void setup()
     // Construct an instance of the MCP4XXX to manage the digipot.
     // The first parameter is the pin number to use for 'chip select' (CS), if you are
     // using the default SPI CS pin for your Arduino you can simply omit this parameter.
-    pot = new MCP4XXX(49);
+    pot = new MCP4XXX(10);  
+    //Set SS pin number
 }
 
 void loop()
